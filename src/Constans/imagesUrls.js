@@ -3,5 +3,5 @@ const imagesUrls = {
   Logo: "/assets/images/logo.png",
   banner: "/assets/images/banner.png",
   bannerTwo: "/assets/images/banner.png",
-  bannerTwo2: "acs3",
+  bannerTwo2: "acs2",
 };
