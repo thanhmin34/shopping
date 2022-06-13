@@ -4,4 +4,5 @@ const imagesUrls = {
   banner: "/assets/images/banner.png",
   bannerTwo: "/assets/images/banner.png",
   bannerTwo2: "acs2",
+  iconOne:  "/assets/images/banner.png",
 };

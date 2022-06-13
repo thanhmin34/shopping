@@ -1,8 +1,7 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlide";
 import { useGetAllProductsQuery } from "../../redux/productsApi";
-import { toast } from "react-toastify";
 
 const Home = () => {
   const { data, error, isLoading } = useGetAllProductsQuery();
@@ -10,7 +9,7 @@ const Home = () => {
   return (
     <div className="h-[1000px] mt-10 w-full max-w-[1280px] mx-auto px-5">
       {isLoading ? (
-        <p>loading...</p>
+        <div className="w-20 h-20 border-2 border-b-transparent rounded-full "></div>
       ) : error ? (
         <p>error</p>
       ) : (
@@ -41,7 +40,7 @@ function ProductsItem({ item }) {
           className="absolute top-0 left-0 right-0 object-cover w-full h-full"
         />
       </div>
-      <div className="flex flex-col text-base font-medium gap-2 ">
+      <div className="flex flex-col text-base font-medium gap-2 p-1 ">
         <h3>{item.name}</h3>
         <span>{item.price}</span>
         <button
