@@ -48,7 +48,7 @@ function ProductsItem({ item }) {
           onClick={() => handleAddToCart(item)}
           className="w-full max-w-[128px] mx-auto bg-blue-700 text-[#fff] rounded-md px-2 py-[6px]"
         >
-          Đặt Thuê
+          Đặt Thuê Nha
         </button>
       </div>
     </div>
